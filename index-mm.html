@@ -6,14 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script defer>
-		let url = new URL(window.location.href);
-		let searchParams = new URLSearchParams(url.search);
-		if(searchParams.get('liike') == 'hklahonen'){
-			document.body.className = "branded brand-hklahonen";
-		} 
-
-		</script>
+		
 		<style type="text/css">
 			.branded .brand-show{
 				display: none;
@@ -695,6 +688,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				let url = new URL(window.location.href);
+				let searchParams = new URLSearchParams(url.search);
+				if(searchParams.get('liike') == 'hklahonen'){
+					document.body.className = "branded brand-hklahonen";
+				} 
+			</script>
 
 	</body>
 </html>
