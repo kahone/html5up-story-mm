@@ -17,7 +17,6 @@
 				position: relative;
 				padding: 1em;
 				margin-bottom: 1em;
-				clear: both;
 			}
 			.carpets img{
 				transform: rotate(15deg);
@@ -26,6 +25,9 @@
 			}
 			.carpets img:not(:first-child){
 				margin-left: -20%;
+			}
+			.carpets img:not(:first-child)::after{
+				clear: both;
 			}
 		</style>
 	</head>
