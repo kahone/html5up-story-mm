@@ -31,6 +31,17 @@
 			.carpets img:not(:first-child){
 				left: 25%;
 			}
+
+			.banner .image::after{
+				content: attr(title);
+				display: inline-block;
+				z-index: 100;
+				position: absolute;
+				left: 2px;
+				background-color: #efefef;
+				padding: 2px 10px;
+				bottom: 2px;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -239,7 +250,7 @@
 						<img src="/cdn-cgi/image/width=480,height=480,fit=pad,background=transparent,format=auto,quality=81/https://mattokuvasto.kyse.fi/080/080_0001_6666_160_230_A_P.jpg"
 							alt="Sirius 6666" class="image fit" style="background-color: transparent;" />
 						<img src="/cdn-cgi/image/width=480,height=480,fit=pad,background=transparent,format=auto,quality=81/https://mattokuvasto.kyse.fi/080/080_0001_8383_ZM.jpeg"
-							alt="Sirius 8383" class="image fit" style="background-color: transparent; border-radius: 50%;" />
+							alt="Sirius 8383" class="image fit" style="background-color: transparent;" />
 							
 						<ul class="actions stacked">
 							<li><a href="#katana" class="button big wide smooth-scroll">Seuraava matto: Katana</a></li>
