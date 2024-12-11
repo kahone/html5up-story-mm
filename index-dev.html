@@ -14,6 +14,9 @@
 			}
 			body.brand-hklahonen .brand-only-hklahonen,
 			body.brand-mattokortesniemi .brand-only-mattokortesniemi
+			body.brand-mattoliikeniemi .brand-only-mattoliikeniemi
+			body.brand-tapettijamatto .brand-only-
+			body.brand- .brand-only-
 			{ display: block; border: 0; }
 
 			ul.actions.stacked{ margin-bottom: 1em; }
@@ -1020,6 +1023,18 @@ Kanttaamme käytävämatot määrämittoihin liikkeessämme – ota mitat mukaan
 				let searchParams = new URLSearchParams(url.search);
 				if(searchParams.get('liike') == 'hklahonen'){
 					document.body.className = "branded brand-hklahonen";
+				}
+				elseif(searchParams.get('liike') == 'mattokortesniemi'){
+					document.body.className = "branded brand-mattokortesniemi";
+				}
+				elseif(searchParams.get('liike') == 'mattoliikeniemi'){
+					document.body.className = "branded brand-mattoliikeniemi";
+				}
+				elseif(searchParams.get('liike') == 'tapettijamatto'){
+					document.body.className = "branded brand-tapettijamatto";
+				}
+				elseif(searchParams.get('liike') == 'vaihtokaluste'){
+					document.body.className = "branded brand-vaihtokaluste";
 				} 
 			</script>
 
