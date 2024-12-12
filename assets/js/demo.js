@@ -177,7 +177,7 @@
 
 								for (k in styles[i][j]) {
 
-									$z = $('<span data-class="' + k + '">, ' + styles[i][j][k].replace('*', '') + '</span>')
+									$z = $('<span data-class="' + k + '">, ' + styles[i][j][k].replace(/\*/g, '') + '</span>')
 										.appendTo($y);
 
 									if (styles[i][j][k].substr(-1, 1) == '*')
