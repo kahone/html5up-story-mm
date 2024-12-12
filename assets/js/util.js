@@ -95,8 +95,14 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
-					config.target = $(config.target);
+				if (typeof config.target != 'jQuery') {
+					if (typeof config.target === 'string' && $(config.target).length > 0) {
+						config.target = $(config.target);
+					} else {
+						console.error('Invalid target specified in userConfig');
+						return $this;
+					}
+				}
 
 		// Panel.
 
