@@ -9,7 +9,7 @@
 
 .initial-snow > * {
 	font-size: 50px;
-	color: white;
+	color: rgba(255, 255, 255, 0.8); /* Add slight transparency */
 	position: absolute;
 	top: -5vh;
 }
